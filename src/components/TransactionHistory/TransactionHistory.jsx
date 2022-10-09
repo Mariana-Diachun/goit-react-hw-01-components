@@ -23,6 +23,7 @@ export const TransactionHistory = ({ items }) => {
     </table>
   );
 };
+
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.exact({

@@ -1,0 +1,39 @@
+.friendWrap {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin-bottom: 50px;
+}
+.friendItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 65px;
+  border: 1px solid rgb(47, 36, 36);
+  box-shadow: 1px 1px 4px 1px #a39494;
+}
+.friendImg {
+  width: 48px;
+  height: 48px;
+  margin-left: 16px;
+}
+.name {
+  margin-left: 18px;
+  font-size: 30px;
+}
+/* .status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 16px;
+} */
+.status.isOnline {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 16px;
+  background-color: green;
+}
+.isOfline {
+  background-color: red;
+}
