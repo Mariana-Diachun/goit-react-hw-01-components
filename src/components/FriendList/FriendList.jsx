@@ -7,13 +7,9 @@ export const FriendList = ({ friends }) => {
       {friends.map(friend => {
         return (
           <li key={friend.id} className={css.item}>
-            <span className={css.status}>
-              {friend.isOnline === true ? (
-                <span className={css.isOnline}></span>
-              ) : (
-                <span className={css.isOfline}></span>
-              )}
-            </span>
+            <span
+              className={friend.isOnline === true ? css.isOnline : css.isOfline}
+            ></span>
             <img
               src={friend.avatar}
               alt="User avatar"
