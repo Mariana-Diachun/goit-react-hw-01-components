@@ -3,10 +3,10 @@ import css from 'components/FriendList/FriendList.module.css';
 
 export const FriendList = ({ friends }) => {
   return (
-    <ul className={css.friendWrap}>
+    <ul className={css.list}>
       {friends.map(friend => {
         return (
-          <li key={friend.id} className={css.friendItem}>
+          <li key={friend.id} className={css.item}>
             <span className={css.status}>
               {friend.isOnline === true ? (
                 <span className={css.isOnline}></span>
@@ -18,7 +18,7 @@ export const FriendList = ({ friends }) => {
               src={friend.avatar}
               alt="User avatar"
               width="48"
-              className={css.friendImg}
+              className={css.avatar}
             />
             <p className={css.name}>{friend.name}</p>
           </li>

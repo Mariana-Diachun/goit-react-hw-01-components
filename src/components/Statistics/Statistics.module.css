@@ -7,13 +7,13 @@
   margin-bottom: 50px;
   background-color: rgb(197, 197, 203);
 }
-.statisticInfo {
+.list {
   display: flex;
   justify-content: center;
   padding: 0;
   margin: 0;
 }
-.titleStatistic {
+.title {
   border-bottom: 1px solid rgb(82, 73, 73);
   padding-bottom: 30px;
   font-size: 35px;
@@ -21,14 +21,14 @@
   text-transform: uppercase;
   padding-left: 50px;
 }
-.infoItem {
+.item {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   padding: 12px;
-  background-color: green;
-  color: white;
+  background-color: rgb(253, 253, 253);
+  color: rgb(96, 80, 80);
   font-size: 20px;
-  border-right: 1px solid black;
+  border-right: 1px solid rgb(133, 130, 130);
 }

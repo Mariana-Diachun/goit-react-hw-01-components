@@ -4,11 +4,11 @@ import css from 'components/Statistics/Statistics.module.css';
 export const Statistics = ({ title, stats }) => {
   return (
     <div className={css.wrapper}>
-      <div>{title && <h2 className={css.titleStatistic}>{title}</h2>}</div>
-      <ul className={css.statisticInfo}>
+      <div>{title && <h2 className={css.title}>{title}</h2>}</div>
+      <ul className={css.list}>
         {stats.map(stat => {
           return (
-            <li key={stat.id} className={css.infoItem}>
+            <li key={stat.id} className={css.item}>
               <span>{stat.label}</span>
               <span>{stat.percentage}%</span>
             </li>

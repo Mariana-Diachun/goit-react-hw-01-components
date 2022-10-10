@@ -1,10 +1,10 @@
-.friendWrap {
+.list {
   display: flex;
   flex-direction: column;
   width: 250px;
   margin-bottom: 50px;
 }
-.friendItem {
+.item {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
@@ -12,7 +12,7 @@
   border: 1px solid rgb(47, 36, 36);
   box-shadow: 1px 1px 4px 1px #a39494;
 }
-.friendImg {
+.avatar {
   width: 48px;
   height: 48px;
   margin-left: 16px;
@@ -21,13 +21,9 @@
   margin-left: 18px;
   font-size: 30px;
 }
-/* .status {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  margin-left: 16px;
-} */
-.status.isOnline {
+
+.isOnline {
+  display: block;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -35,5 +31,10 @@
   background-color: green;
 }
 .isOfline {
+  display: block;
   background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 16px;
 }
